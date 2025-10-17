@@ -34,3 +34,17 @@ if __name__ == '__main__':
     create_streamlit_app(chain,portfolio,clean_text)
 
 
+import os
+import streamlit as st
+import openai
+
+# Prefer st.secrets on Streamlit Cloud, fall back to environment for local dev
+openai_key = st.secrets.get("OPENAI_API_KEY") if "st" in globals() else None
+openai_key = openai_key or os.getenv("OPENAI_API_KEY")
+
+openai.api_key = openai_key
+
+if openai.api_key:
+    st.success("✅ OpenAI API key loaded successfully! (key not printed)")
+else:
+    st.error("❌ OpenAI API key not found. Set OPENAI_API_KEY in Streamlit Secrets or env vars.")
