@@ -14,7 +14,8 @@ AutoPitch AI automatically crafts personalized cold outreach emails by combining
 
 The system architecture for **AutoPitch AI** is illustrated below:
 
-![Architecture Diagram](C:\Users\Vishw\OneDrive\Documents\project_to_add_to_resume\cold_email generator\Architecture.png)
+[![Architecture Diagram](C:/Users/Vishw/OneDrive/Documents/project_to_add_to_resume/cold_email%20generator/Architecture.png)]
+
 
 ### 🧠 Workflow Summary
 1. **Career’s Page** → Job descriptions are scraped from company sites.  
