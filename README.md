@@ -9,6 +9,21 @@ AutoPitch AI automatically crafts personalized cold outreach emails by combining
 - Uses LangChain for LLM orchestration and prompt templates.
 - Portfolio data stored in a CSV and optionally a vectorstore (ChromaDB) to match skills to projects.
 - Supports multiple embedding backends (ONNX, OpenAI). ONNX may require specific NumPy versions.
+- 
+## 🏗️ Architecture Diagram
+
+The system architecture for **AutoPitch AI** is illustrated below:
+
+![Architecture Diagram](f578997f-ee2c-4993-99ad-1f0dd392064c.png)
+
+### 🧠 Workflow Summary
+1. **Career’s Page** → Job descriptions are scraped from company sites.  
+2. **LLM** → Extracts key job fields (title, skills, experience, description) into JSON format.  
+3. **Vector Store** → Stores portfolio embeddings for semantic similarity search.  
+4. **LLM (Matching Layer)** → Matches job requirements with relevant portfolio links.  
+5. **Cold Mail Generator (LLM)** → Crafts a personalized outreach email.  
+
+Result → A context-rich, tailored **cold email** ready to send.
 
 ## Repo structure
 - app/
