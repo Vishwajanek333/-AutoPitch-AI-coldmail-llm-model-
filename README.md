@@ -13,7 +13,8 @@ AutoPitch AI automatically crafts personalized cold outreach emails by combining
 ## 🏗️ Architecture Diagram
 
 The system architecture for **AutoPitch AI** is illustrated below:
-![Architecture Diagram](https://raw.githubusercontent.com/vishwaJ/cold_email_generator/main/Architecture.png)
+![Architecture Diagram](Architecture.png)
+
 
 
 
