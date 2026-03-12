@@ -69,7 +69,8 @@ Result → A context-rich, tailored **cold email** ready to send.
    ```
    streamlit run "app\main.py"
    ```
-   Open http://localhost:8501
+   Open ## Live Demo
+[Open the app](http://localhost:8505/
 
 ## Files to edit for API keys / config
 Create `.env` (do not commit) or set environment variables:
